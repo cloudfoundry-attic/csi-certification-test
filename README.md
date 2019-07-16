@@ -1,4 +1,4 @@
-# CSI-Cert
+# CSI-Certification
 
 The purpose of CSI-cert is to create a certification test, which can be used to test controller and node plugins, to check if they implement [Container Storage Interface(CSI)](https://github.com/container-storage-interface/spec/blob/master/spec.md) Spec. 
 
@@ -86,14 +86,10 @@ export FIXTURE_FILENAME=<YOUR_JSON_FILE>
 
 #### Using go get
 ```bash
-go get github.com/paulcwarren/csi-cert
+go get github.com/cloudfoundry/csi-certification-test
 go get github.com/onsi/ginkgo/ginkgo
-pushd $GOPATH/src/github.com/paulcwarren/csi-cert
+pushd $GOPATH/src/github.com/cloudfoundry/csi-certification-test
 ./scripts/go_get_all_dep.sh
 ginkgo -r -p
 ```
 
-#### Using pre-built binaries
-1. Download the [latest binary](https://github.com/paulcwarren/csi-cert/releases)
-1. Unpackage the tgz file ```tar -xzvf csi-cert.test.tgz```
-1. Run the test ```./csi-cert.test.<YOUR_OS>```
